@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --mainColor: rgb(203, 12, 203);
+}
+
+body{
+    height: 100vh;
+    background: #aaa2;
+    display: flex;
+}
+
+.container{
+    height: 80%;
+    width: 400px;
+    margin: auto;
+    background: #fff;
+    box-shadow: 0 0 50px #0004;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.data{
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    height: 100%;
+}
+
+.data img{
+    margin: 20px;
+    box-shadow: 0 0 15px #aaa;
+    display: none;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+}
+
+form input{
+    width: 100%;
+    padding: 10px;
+    outline-color: var(--mainColor);
+}
+
+form button{
+    background: var(--mainColor);
+    color: #fff;
+    text-transform: capitalize;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+a{
+    color: blue;
+    text-decoration: none;
+    display: none;
+}

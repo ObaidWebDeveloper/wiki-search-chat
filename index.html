@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat With Wiki Api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="data">
+            <h1></h1>
+            <summary></summary>
+            <img src="data:image/png;base64,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" alt="pakistan">
+            <a href="#">more about wiki</a>
+        </div>
+        <form>
+            <input type="text" placeholder="Searching Wiki">
+            <button>Search</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
